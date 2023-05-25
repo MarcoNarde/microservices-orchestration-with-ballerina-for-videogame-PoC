@@ -1,0 +1,9 @@
+[package]
+org = "marco"
+name = "OrchestratorKubernetes"
+version = "0.1.0"
+distribution = "2201.3.2"
+
+[build-options]
+observabilityIncluded = true
+cloud = "k8s"
