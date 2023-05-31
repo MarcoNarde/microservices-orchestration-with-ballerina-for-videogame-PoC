@@ -449,8 +449,8 @@ FodyWeavers.xsd
 # https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
 #
 # Binaries for programs and plugins
-*.exe
-*.exe~
+*match-making/.exe
+*match-making/.exe~
 *.dll
 *.so
 *.dylib
@@ -517,10 +517,10 @@ ExportedObj/
 sysinfo.txt
 
 # Builds
-*.apk
-*.aab
-*.unitypackage
-*.app
+*TicTacToe/.apk
+*TicTacToe/.aab
+*TicTacToe/.unitypackage
+*TicTacToe/.app
 
 # Crashlytics generated file
 crashlytics-build.properties
