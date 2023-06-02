@@ -8,3 +8,5 @@ The repository holds a PoC (Proof of Concept) aim to show how a Cloud-Native lan
 - The implementation of the TicTacToe game, made for the PoC in the folder *TictacToe*.
 - The executables of the game i.e. the APK file for Android and the .exe for Windows in the folder *game-executables*.
 - Some test files used to test the performance of the orchestrator, located in the folder *test-scripts*.
+---
+## Setup Local Environment
