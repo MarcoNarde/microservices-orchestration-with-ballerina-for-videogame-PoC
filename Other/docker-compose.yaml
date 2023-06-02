@@ -1,0 +1,34 @@
+version: '3'
+services:
+  matchmaking-server:
+    image: marconarde/matchmaking
+    container_name: matchmaking-server
+    networks:
+      - tictactoe-net
+    ports:
+      - "8080:8080"
+      
+  game-server-ct:
+    image: marconarde/gameserver
+    container_name: game-server-ct
+    networks:
+      - tictactoe-net
+    ports:
+      - "9090:9090"
+    environment:
+      ASPNETCORE_HTTP_PORT: "https://+:9090"
+    stdin_open: true
+    tty: true
+      
+  orchestrator:
+    image: marconarde/orchestrator
+    container_name: orchestrator
+    networks:
+      - tictactoe-net
+    ports:
+      - "9092:9092"
+      - "9095:9095"
+      
+networks:
+  tictactoe-net:
+    driver: bridge
