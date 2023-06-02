@@ -1,2 +1,3 @@
 # microservices-orchestration-with-ballerina-for-videogame-PoC
-Poc based on Microservices Orchestration for TicTacToe videogame backend using Ballerina language
+The repository holds a PoC (Proof of Concept) aim to show how a Cloud-Native language, in this case Ballerina, can be used to help the orchestration of microservices, in the particular case in which this context is applied to the development of online multiplayer video games, mainly focusing on the backend part of the entire application. In the repository you can find:
+- The orchestrator implementation with Ballerina, to manage the interaction between the microservices and the game built in Unity. There are two different implementations, one used for local deployment (also with the help of Kubernetes) and one adapted for the Cloud.
