@@ -10,3 +10,9 @@ The repository holds a PoC (Proof of Concept) aim to show how a Cloud-Native lan
 - Some test files used to test the performance of the orchestrator, located in the folder *test-scripts*.
 ---
 ## Setup Local Environment
+The game was tested on Windows 10 computers and smartphones running Android 9-10 while the microservices were tested with docker desktop and Kubernetes for Windows and in a virtual machine running Linux. To be able to use the entire application locally, only with docker, just carry out the steps described below:
+1. Set up [Docker and Docker Desktop](https://docs.docker.com/get-started/) for you pc.
+2. Run ``docker-compose -f ~/Other/docker-compose.yml up -d`` using the file docker-compose.yaml in the *Other* folder.
+    1. Alternatively, if you don't want to use the docker images already present in docker.hub, you can build each service image using the dockerfiles contained in each service folder, using the command ``docker build -t image-name .``.
+4. Get the executable used for local use, the executable for this are in the folder *game-executables/local*.
+5. Run the application in 2 instances and try it.
