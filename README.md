@@ -1,4 +1,5 @@
 # microservices-orchestration-with-ballerina-for-videogame-PoC
+![schermata gioco](https://github.com/MarcoNarde/microservices-orchestration-with-ballerina-for-videogame-PoC/assets/56313280/8b3055f8-f9f3-4c79-b876-cd89e8fd153c)
 The repository holds a PoC (Proof of Concept) aim to show how a Cloud-Native language, in this case Ballerina, can be used to help the orchestration of microservices, in the particular case in which this context is applied to the development of online multiplayer video games, mainly focusing on the backend part of the entire application. In the repository you can find:
 - The orchestrator implementation with Ballerina, to manage the interaction between the microservices and the game built in Unity. There are two different implementations, one used for local deployment (also with the help of Kubernetes) in the folder *OrchestratorKubernetes* and one adapted for the Cloud in the folder *OrchestratorCloud*.
 - The matchmaking service, written in [GO](https://golang.org) that allows two players to be paired with each other. You can find it in the folder *match-making*.
